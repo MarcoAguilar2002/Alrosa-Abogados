@@ -1,0 +1,87 @@
+
+.form input{
+    width: 100%;
+    height: 100%;
+    background: none;
+    color: black;
+    padding-top: 20px;
+    border: none;
+    outline: 0px;
+}
+
+.form .lbl-nombre{
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid #c7c7c7;
+}
+
+.form .lbl-nombre:after{
+    content: '';
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 4px solid #c7c7c7;
+    transform: translateX(100%);
+    transition: all 0.3s ease;
+}
+
+.text-nomb{
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: all 0.3s ease;
+    color: black;
+}
+
+.form input:focus + .lbl-nombre .text-nomb, .form input:valid + .lbl-nombre .text-nomb{
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #2ecece;
+}
+
+.form input:focus + .lbl-nombre::after,
+.form input:valid + .lbl-nombre::after
+{
+    transform: translateX(0%);
+}
+
+
+
+/*Coloressss */
+.letras{
+    color: #FFF
+}
+
+.subtitulos{
+    color: #d69d0d;
+}
+
+
+.btn-nuestro{
+    background-color: #1F3A5F;
+    color: white;
+  }
+
+  .btn-nuestro:hover{
+    background-color:#0F1C2E;
+    color: white;
+  }
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.sec{
+    height: 15rem;
+    width: auto;
+}
+
+.icono-circular {
+    background-color: #d3a225; /* Puedes cambiar el color de fondo según tus preferencias */
+    padding: 20px; /* Puedes ajustar el espacio de relleno según tus necesidades */
+    border-radius: 50%; /* Hace que el fondo sea más circular */
+  }

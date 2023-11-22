@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Linear+B&family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Linear+B&family=Staatliches&display=swap');
+
+
+:root {
+    --primary-100: #1F3A5F;
+    --primary-200: #4d648d;
+    --primary-300: #acc2ef;
+    --accent-100: #3D5A80;
+    --accent-200: #cee8ff;
+    --text-100: #FFFFFF;
+    --text-200: #e0e0e0;
+    --bg-100: #0F1C2E;
+    --bg-200: #1f2b3e;
+    --bg-300: #374357;
+    --BottomOffset: 10px;
+    --LineHeight: 3px;
+    --LineColor: #29EECC;
+    --navb: #0b1a2a;
+}
+
+body {
+    background-color: var(--bg-100);
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+nav{
+    background-color: var(--navb);
+}
+
+.navbar-nav .nav-link {
+    font-size: 20px;
+    color: var(--text-100);
+    transition: color 0.3s; /* Agregamos una transición para suavizar el cambio de color */
+    
+}
+
+.letras2{
+    color: var(--bg-100)
+}
+
+.blanco{
+    color: #FFFFFF;
+}
+
+/* Cambio de color del texto al hacer hover */
+.navbar-nav .nav-link:hover {
+    color: var(--text-200); /* Cambia el color de texto al hacer hover */
+}
+
+
+/* Menu Hover Effects Style 2 */
+.dl-menu-style2 ul.et-menu>li>a {
+    position: relative;
+    z-index: 1;
+}
+
+.dl-menu-style2 ul.et-menu>li>a:before {
+    position: absolute;
+    content: '';
+    display: block;
+    z-index: -1;
+    background: var(--accent-100);
+    width: 0;
+    height: var(--LineHeight);
+    bottom: var(--BottomOffset);
+    left: calc(var(--LineHeight));
+    transition: 0.4s cubic-bezier(.03, .3, .4, .96);
+    transform: skew(-10deg);
+}
+
+.dl-menu-style2 ul.et-menu>li>a:hover:before {
+    width: calc(90% + var(--LineHeight));
+}
+
+
+.navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Mantener el texto del enlace blanco durante el hover */
+
+.navbar-nav .nav-item.dropdown:hover .nav-link {
+    color: #fff !important;
+}
+
+.dropdown-item:hover {
+    color: #0b1a2a;
+    font-weight: bold;
+}
+
+/*Footer*/
+footer{
+    color:var(--primary-100);
+    background-color: #0b1a2a;
+}
+
+.border-right-thicker {
+    border-right: 4px solid var(--text-100); /* Ajusta el grosor y el color del borde según tus preferencias */
+}
+
+.large-phone-number {
+    font-size: 20px; /* Ajusta el tamaño deseado del número de teléfono */
+}
+
+
+/* styles.css */
+.navbar-nav .nav-item .nav-link i {
+    transition: color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .navbar-nav .nav-item .nav-link:hover i {
+    color: var(--accent-100) !important; /* Cambia el color al que desees al hacer hover */
+    border-color: var(--accent-100) !important; /* Cambia el color del borde al que desees al hacer hover */
+  }
+
+
+  .social-link:hover {
+    color: var(--accent-100)!important; /* Cambia el color al pasar el ratón */
+    /* Otros estilos o efectos que desees aplicar al pasar el ratón */
+}
+
+.texto{
+    color:var(--bg-100);
+}
+
+
+/*CLIENTESSS*/

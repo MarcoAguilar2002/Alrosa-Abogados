@@ -1,0 +1,32 @@
+
+.letras5{
+    font-size: 60px;
+    color:#1F3A5F;
+}
+
+.derecho{
+  background-color: white;
+}
+
+.letras6{
+  font-size: 20px;
+}
+
+/* Estilos para el contenedor de la imagen */
+.div-imagen-container {
+  max-width: 800px; /* Puedes ajustar el tamaño máximo del div según tus necesidades */
+  height: 600px; /* Puedes ajustar la altura del div según tus necesidades */
+  margin: auto; /* Centra el div en el contenedor principal */
+}
+
+/* Estilos para la imagen dentro del contenedor */
+.imagen-container img {
+  width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
+  height: 100%; /* La imagen ocupará el 100% de la altura del contenedor */
+  object-fit: cover; /* Ajusta la imagen para cubrir completamente el contenedor sin distorsión */
+}
+
+.div-texto-container{
+  max-width: 800px; /* Puedes ajustar el tamaño máximo del div según tus necesidades */
+  margin: auto; /* Centra el div en el contenedor principal */
+}

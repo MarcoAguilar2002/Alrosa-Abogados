@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Odor+Mean+Chey&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Odor+Mean+Chey&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+main {
+    min-height: 88vh;
+}
+
+.padre {
+  display: flex;
+  align-items: center;
+}
+
+.btn-nuestro{
+  background-color: #1F3A5F;
+}
+
+.btn-nuestro:hover{
+  background-color:#0F1C2E;
+  color: white;
+}
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+   /* Establece un z-index más bajo para que el video esté detrás de otros elementos */
+   z-index: -1;
+   opacity: 0.5;
+}
+
+.square-button {
+    border-radius: 0; /* Elimina la redondez de los botones */
+    padding: 10px 20px; /* Ajusta el tamaño del botón según tus necesidades */
+}
+
+.glowing-text {
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Definimos el efecto de iluminado */
+}
+
+.fuente1{
+  font-family: 'Anton', sans-serif;
+  font-size: 35px;
+}
+
+.fuente2{
+  font-family: 'Lobster', sans-serif;
+  font-size: 40px;
+}
+
+
+/*Linea*/
+.pilares-header {
+    display: flex;
+    align-items: center;
+}
+
+.pilares-header h1 {
+    margin-right: 10px; /* Espacio entre el texto y la línea */
+}
+
+.line {
+    flex-grow: 1;
+    height: 2px;
+    background-color: white; /* Color de la línea */
+}
+
+/*Efecto hover para imágenes*/
+/* Demo purposes only */
+figure.snip0015 {
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 220px;
+  max-width: 310px;
+  max-height: 320px;
+  width: 100%;
+  text-align: center;
+}
+
+figure.snip0015 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+figure.snip0015 img {
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta la imagen manteniendo la relación de aspecto y cubriendo todo el contenedor */
+  -webkit-transition: opacity 0.35s;
+  transition: opacity 0.35s;
+}
+  figure.snip0015 figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 3em 3em;
+    width: 100%;
+    height: 100%;
+  }
+  figure.snip0015 figcaption::before {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    bottom: 50%;
+    left: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.8);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+    content: '';
+    opacity: 0;
+    background-color: #ffffff;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    -webkit-transition-delay: 0.6s;
+    transition-delay: 0.6s;
+  }
+  figure.snip0015 h4,
+  figure.snip0015 p {
+    margin: 0 0 5px;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s,-webkit-transform 0.35s,-moz-transform 0.35s,-o-transform 0.35s,transform 0.35s;
+  }
+  figure.snip0015 h4 {
+    word-spacing: -0.15em;
+    font-weight: 300;
+    text-transform: uppercase;
+    -webkit-transform: translate3d(0%, 50%, 0);
+    transform: translate3d(0%, 50%, 0);
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+  }
+  figure.snip0015 h4 span {
+    font-weight: 800;
+  }
+  figure.snip0015 p {
+    font-weight: 200	;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+  }
+  figure.snip0015 a {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    color: #ffffff;
+  }
+  figure.snip0015:hover img {
+    opacity: 0.35;
+  }
+  figure.snip0015:hover figcaption h4 {
+    opacity: 1;
+    -webkit-transform: translate3d(0%, 0%, 0);
+    transform: translate3d(0%, 0%, 0);
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+  }
+  figure.snip0015:hover figcaption p {
+    opacity: 0.9;
+    -webkit-transition-delay: 0.6s;
+    transition-delay: 0.6s;
+  }
+  figure.snip0015:hover figcaption::before {
+    background: rgba(255, 255, 255, 0);
+    top: 30px;
+    bottom: 30px;
+    opacity: 1;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+  }
+
+/* Estilos para figuras personalizadas */
+.custom-figure {
+    position: relative;
+    overflow: hidden;
+    background: #000000;
+    text-align: center;
+    height: 330px; /* Establece la altura fija para todas las figuras */
+    margin: 0; /* Elimina los márgenes */
+    padding: 0; /* Elimina el relleno */
+}
+/* Estilos para imágenes personalizadas */
+.custom-img {
+    max-width: 100%;
+    height: auto;
+    margin: 0; /* Elimina los márgenes */
+    padding: 0; /* Elimina el relleno */
+}
+
+
+/*CLIENTES*/
+.clientes{
+  height: 100vh;
+}
+
+@-webkit-keyframes scroll {
+  0% {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  }
+  100% {
+  -webkit-transform: translateX(calc(-250px * 7));
+  transform: translateX(calc(-250px * 7));
+  }
+  }
+  @keyframes scroll {
+  0% {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  }
+  100% {
+  -webkit-transform: translateX(calc(-250px * 7));
+  transform: translateX(calc(-250px * 7));
+  }
+  }
+  .slider {
+  background: pr;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 960px;
+  }
+  .slider::before, .slider::after {
+  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+  }
+  .slider::after {
+  right: 0;
+  top: 0;
+  -webkit-transform: rotateZ(180deg);
+  transform: rotateZ(180deg);
+  }
+  .slider::before {
+  left: 0;
+  top: 0;
+  }
+  .slider .slide-track {
+  -webkit-animation: scroll 40s linear infinite;
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(250px * 14);
+  }
+  .slider .slide {
+  height: 100px;
+  width: 250px;
+  }
+
+.separa{
+    padding-left: 150px;
+}
+
+/*LOGO IMAGEN*/
+.col img{
+  height: 180px;
+}
+
+/**SERVICIOS*/
+.blog{
+  position: relative;
+  width: 22em;
+  height: 25em;
+  background-size: 22em 30em;
+  box-shadow: 3px 3px 20px rgba(0,0,0,0.5);
+  margin: auto;
+  -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
+  overflow: hidden;
+}
+.blog *{
+  position: relative;
+  z-index: 2;
+}
+.blog:hover .color-overlay{
+  background:rgba(8, 22, 29, 0.8);
+}
+.blog:hover .info{
+  bottom: -3em;
+  opacity: 1;
+}
+.blog, .color-overlay{
+   border-radius: 0.7em;
+}
+.color-overlay{
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  transition: 0.7s background;
+  background: rgba(74, 100, 114, 0.3);
+  z-index: 1;
+}
+
+.title-box{
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin-top: 2em;
+}
+.title-box hr{
+  margin-top: -0.4em;
+  margin-bottom: 1em;
+  width: 5em;
+  height: 0.25em;
+  box-sizing: content-box;
+  border: none;
+  background: #d4b30d;
+}
+h3{
+   display: inline-block;
+   font-weight: 500;
+   letter-spacing: 2px;
+   font-size: 1.4em;
+   
+   text-align: center;
+}
+.intro{
+  width: 170px;
+  margin: 0 auto;
+  color: #fff;
+  font-family: 'Droid Serif', serif;
+  font-size: 18px;
+  font-style: italic;
+  line-height: 18px;
+}
+
+
+.info{
+  font-family: 'Droid Serif', serif;
+  font-size: 1.2em;
+  color: #ddd;
+  line-height: 1.1em;
+  padding: 0 2em;
+ 
+  position: relative;
+  bottom: -4em;
+  opacity: 0;
+  background: transparent;
+  transition: opacity 0.3s, bottom 0.3s;
+  text-align: center;
+}
+
+.footer{
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 10em;
+  background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.9));
+  border-radius:  0 0 0.7em 0.7em;
+}
+
+.footer > .icon-holder{
+  position: absolute;
+  bottom: 0;
+  height: 3em;
+  width: 100%;
+  display: inline-block;
+  font-size: 1.2em;
+  padding: 0 2em;
+  
+}
+
+.icon-holder i{
+  color: #e7c208;
+}
+
+.icon-holder span, h3{
+  color: #acc2ef;
+  
+}
+
+space{
+  display: inline-block;
+  width: 0.6em;
+  height: 1em;
+}
+
+/**/
+.principal{
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  min-height: 88vh;
+} 
+
+.secundario{
+  position: absolute;
+  background-color: rgba(0, 0, 0, .6);
+  width: 100%;
+  height: 100%;
+}
